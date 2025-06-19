@@ -20,7 +20,7 @@ async function cleanFromData(dataArray) {
     preProcessedScoredSum += preProcessedScored;
     postProcessedScoredSum += postProcessedScored;
 
-    cleaned.push({ ...processed, scoreBefore: preProcessedScored, scoreAfter: postProcessedScored });
+    cleaned.push({ ...processed, preProcessedScored: preProcessedScored, postProcessedScored: postProcessedScored });
   }
 
   const summary = {
