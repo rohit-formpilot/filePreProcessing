@@ -26,7 +26,7 @@ async function cleanFromData(dataArray) {
   const summary = {
     averagePreProcessedScoredSum: (preProcessedScoredSum / cleaned.length).toFixed(2),
     averagePostProcessedScoredSum: (postProcessedScoredSum / cleaned.length).toFixed(2),
-    totalImproved: (postProcessedScoredSum - preProcessedScoredSum).toFixed(2),
+    totalImprovedScore: (postProcessedScoredSum - preProcessedScoredSum).toFixed(2),
   };
   return { cleaned, summary };
 }
